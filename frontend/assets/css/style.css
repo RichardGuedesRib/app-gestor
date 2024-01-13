@@ -1,0 +1,239 @@
+body {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* background: rgb(237, 237, 237);
+    background: linear-gradient(306deg, rgba(237, 237, 237, 1) 0%, rgba(115, 115, 115, 1) 55%, rgba(61, 61, 61, 1) 84%); */
+    background-image: linear-gradient(to bottom, #464646, #505e6f, #3b7b94, #009ca5, #00ba9c, #00bfa1, #00c3a5, #00c8aa, #15b3be, #5a9cb6, #788699, #767676);
+    width: 412px;
+    height: 914px;
+    border-radius: 2rem;
+    position: relative;
+}
+
+.container-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 90%;
+}
+
+.container-log-in {
+    top: 200px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: 60%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.container-buttons-ext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+    width: 80%;
+}
+
+.container-footer {
+    margin-bottom: 70px;
+}
+
+
+.img-span {
+    width: 35px;
+    height: 100%;
+
+}
+
+.form-register {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container-data {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container-buttons {
+    display: flex;
+    height: 50%;
+    width: 100%;
+}
+
+.span-logo {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-container-data {
+    font-size: 40px;
+    color: #EDEDED;
+    letter-spacing: 2px;
+}
+
+.logo-login {
+    height: 100%;
+    width: 300px;
+}
+
+.text-input {
+    height: 30px;
+    width: 90%;
+    border-radius: .5rem;
+    padding-left: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #737373;
+
+}
+
+.btn-next {
+    border-radius: .5rem;
+
+}
+
+.text-footer {
+    color: #EDEDED;
+}
+
+.link-login {
+    text-decoration: none;
+    color: #3d3d3d;
+    margin-left: 3px;
+}
+
+.link-login:hover {
+    transition: .7s;
+    color: #737373;
+}
+
+.btn-register {
+    width: 150px;
+    height: 35px;
+    border-radius: 0.5rem;
+    background-image: linear-gradient(to right top, #1a1a1a, #282929, #373838, #464848, #585957);
+    color: #EDEDED;
+    font-size: 16px;
+}
+
+.btn-register:hover {
+    transition: .5s;
+    transform: scale(1.05);
+    background-image: linear-gradient(to right top, #4b4c4a, #565654, #60615f, #6b6b6a, #767675);
+}
+
+.none {
+    display: none;
+}
+
+#btn-confirm-register,
+#btn-backToRegister {
+    margin-top: 15px;
+}
+
+#btn-confirm-login {
+    margin-top: 45px;
+}
+
+.container-header {
+    background-image: linear-gradient(to right top, #4b4c4a, #565654, #60615f, #6b6b6a, #767675);
+    border-radius: 2rem 2rem 1rem 1rem;
+    height: 15%;
+    width: 100%;
+}
+
+.container-logo-header {
+    height: 120%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container-header-top {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+
+.logo-header {
+    height: 100%;
+    width: 60%;
+}
+
+.icon-profile {
+    background-color: #FFF;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.element-hidden {
+    cursor: pointer;
+}
+
+.element-notifications {
+    cursor: pointer;
+}
+
+.icon-profile {
+    cursor: pointer;
+}
+
+.container-header-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+    color: #EDEDED;
+    align-items: center;
+
+}
+
+.btn-wallets {
+    color: #737373;
+}
+
+.wallets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 160px;
+    background-color: #FFF;
+    border-radius: .7rem;
+    cursor: pointer;
+}

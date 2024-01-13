@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Arquivos JS -->
+    <script src="assets/js/models/User.js" defer></script>
+    <script src="assets/js/controllers/loginController.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-logo">
+        <img src="assets/img/logo1.png" alt="" class="logo-login" />
+      </div>
+      <div class="container-log-in" id="dataForm">
+        <span class="title-container-data">Registrar</span>
+        <div class="container-data">
+          <form
+            action=""
+            class="form-register"
+            onsubmit="collectDataRegister()"
+          >
+            <input type="text" class="text-input" placeholder="Nome" required />
+            <br />
+            <input
+              type="text"
+              class="text-input"
+              placeholder="Sobrenome"
+              required
+            />
+            <br />
+            <input
+              type="text"
+              class="text-input"
+              placeholder="Celular"
+              required
+            />
+            <br />
+            <input
+              type="email"
+              class="text-input"
+              placeholder="Email"
+              required
+            />
+            <br />
+
+            <input
+              type="submit"
+              value="Próximo"
+              class="btn-next btn-register"
+            />
+          </form>
+        </div>
+        <div class="container-buttons-ext">
+          <span class="text-footer">Registrar com</span>
+          <div class="container-buttons">
+            <span class="span-logo btn-register"
+              ><img src="assets/img/gmail.png" alt="" class="img-span"
+            /></span>
+            <span class="span-logo btn-register"
+              ><img src="assets/img/facebook.png" alt="" class="img-span"
+            /></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Div Senha -->
+      <div class="container-log-in none" id="container-password">
+        <span class="title-container-data">Registrar</span>
+        <div class="container-data">
+          <form action="" class="form-register">
+            <input
+              type="password"
+              class="text-input password"
+              placeholder="Digite uma Senha"
+              id="text-password1"
+              autocomplete="false"
+              required
+            />
+            <br />
+            <input
+              type="password"
+              class="text-input"
+              placeholder="Confirme sua senha"
+              id="text-password2"
+              autocomplete="false"
+              required
+            />
+
+            <input
+              type="submit"
+              value="Próximo"
+              class="btn-next btn-register"
+              id="btn-confirm-register"
+              onclick="validateRegisterPassword()"
+            />
+            <input
+              type="button"
+              value="Retornar"
+              class="btn-next btn-register"
+              id="btn-backToRegister"
+              onclick="backToRegister()"
+            />
+            <p id="msg-register" style="color: red; margin-top: 15px"></p>
+          </form>
+        </div>
+        <div class="container-buttons-ext">
+          <span class="text-footer">Registrar com</span>
+          <div class="container-buttons">
+            <span class="span-logo btn-register"
+              ><img src="assets/img/gmail.png" alt="" class="img-span"
+            /></span>
+            <span class="span-logo btn-register"
+              ><img src="assets/img/facebook.png" alt="" class="img-span"
+            /></span>
+          </div>
+        </div>
+      </div>
+      <!-- Final Div Senha -->
+
+      <div class="container-footer">
+        <span class="text-footer">Já possui uma conta? Faça</span>
+        <a href="pages/login.html" class="link-login">Log in</a>
+      </div>
+    </div>
+  </body>
+</html>

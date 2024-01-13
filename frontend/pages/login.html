@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!-- Arquivos JS -->
+    <script src="../assets/js/models/User.js" defer></script>
+    <script src="../assets/js/controllers/loginController.js" defer></script>
+    <script src="../assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-logo">
+        <img src="../assets/img/logo1.png" alt="" class="logo-login" />
+      </div>
+      
+      <!-- Div Senha -->
+      <div class="container-log-in" id="container-log-in">
+        <span class="title-container-data">Logar</span>
+        <div class="container-data">
+          <form action="" class="form-register">
+            <input
+              type="email"
+              class="text-input password"
+              placeholder="Digite o Email"
+              id="text-email"
+              autocomplete="false"
+              required
+            />
+            <br />
+            <input
+              type="password"
+              class="text-input"
+              placeholder="Digite sua senha"
+              id="text-password"
+              autocomplete="false"
+              required
+            />
+
+            <input
+              type="button"
+              value="Logar"
+              class="btn-next btn-register"
+              id="btn-confirm-login"
+              onclick="checkLogin()"
+            />
+         
+            <p id="msg-register" style="color: red; margin-top: 15px;"></p>
+          </form>
+        </div>
+        <div class="container-buttons-ext">
+          <span class="text-footer">Registrar com</span>
+          <div class="container-buttons">
+            <span class="span-logo btn-register"
+              ><img src="../assets/img/gmail.png" alt="" class="img-span"
+            /></span>
+            <span class="span-logo btn-register"
+              ><img src="../assets/img/facebook.png" alt="" class="img-span"
+            /></span>
+          </div>
+        </div>
+      </div>
+      <!-- Final Div Senha -->
+
+      <div class="container-footer">
+        <span class="text-footer">Não possui uma conta? Registre </span>
+        <a href="../index.html" class="link-login">Aqui</a>
+      </div>
+    </div>
+  </body>
+</html>
